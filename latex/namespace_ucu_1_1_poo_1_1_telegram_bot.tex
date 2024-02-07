@@ -1,0 +1,19 @@
+\doxysection{Ucu.\+Poo.\+Telegram\+Bot Namespace Reference}
+\hypertarget{namespace_ucu_1_1_poo_1_1_telegram_bot}{}\label{namespace_ucu_1_1_poo_1_1_telegram_bot}\index{Ucu.Poo.TelegramBot@{Ucu.Poo.TelegramBot}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_ucu_1_1_poo_1_1_telegram_bot_1_1_base_handler}{Base\+Handler}}
+\begin{DoxyCompactList}\small\item\em Clase base para implementar el patrón \href{https://refactoring.guru/design-patterns/chain-of-responsibility}{\texttt{ Chain of Responsibility}}. En ese patrón se pasa un mensaje a través de una cadena de \"{}handlers\"{} que pueden procesar o no el mensaje. Cada \"{}handler\"{} decide si procesa el mensaje, o si se lo pasa al siguiente. Esta clase base implmementa la responsabilidad de recibir el mensaje y pasarlo al siguiente \"{}handler\"{} en caso que el mensaje no sea procesado. La responsabilidad de decidir si el mensaje se procesa o no, y de procesarlo, se delega a las clases sucesoras de esta clase base. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_ucu_1_1_poo_1_1_telegram_bot_1_1_buscar_partida_handler}{Buscar\+Partida\+Handler}}
+\begin{DoxyCompactList}\small\item\em Un \"{}handler\"{} del patrón Chain of Responsibility que implementa el comando \"{}chau\"{}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_ucu_1_1_poo_1_1_telegram_bot_1_1_colocar_barcos_handler}{Colocar\+Barcos\+Handler}}
+\begin{DoxyCompactList}\small\item\em Un \"{}handler\"{} del patrón Chain of Responsibility que implementa el comando \"{}chau\"{}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_ucu_1_1_poo_1_1_telegram_bot_1_1_crear_partida_handler}{Crear\+Partida\+Handler}}
+\begin{DoxyCompactList}\small\item\em Un \"{}handler\"{} del patrón Chain of Responsibility que implementa el comando \"{}chau\"{}. \end{DoxyCompactList}\item 
+interface \mbox{\hyperlink{interface_ucu_1_1_poo_1_1_telegram_bot_1_1_i_handler}{IHandler}}
+\begin{DoxyCompactList}\small\item\em Interfaz para implementar el patrón \href{https://refactoring.guru/design-patterns/chain-of-responsibility}{\texttt{ Chain of Responsibility}}. En ese patrón se pasa un mensaje a través de una cadena de \"{}handlers\"{} que pueden procesar o no el mensaje. Cada \"{}handler\"{} decide si procesa el mensaje, o si se lo pasa al siguiente. Esta interfaz define un atributo para definir el próximo \"{}handler\"{} y una una operación para recibir el mensaje y pasarlo al siguiente \"{}handler\"{} en caso que el mensaje no sea procesado. La responsabilidad de decidir si el mensaje se procesa o no, y de procesarlo, se realiza en las clases que implementan esta interfaz. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_ucu_1_1_poo_1_1_telegram_bot_1_1_program}{Program}}
+\begin{DoxyCompactList}\small\item\em Un programa que implementa un bot de Telegram. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_ucu_1_1_poo_1_1_telegram_bot_1_1_ver_tablero_handler}{Ver\+Tablero\+Handler}}
+\begin{DoxyCompactList}\small\item\em Un \"{}handler\"{} del patrón Chain of Responsibility que implementa el comando \"{}chau\"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}

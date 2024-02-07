@@ -1,0 +1,119 @@
+\doxysection{Jugador Class Reference}
+\hypertarget{class_jugador}{}\label{class_jugador}\index{Jugador@{Jugador}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_jugador_a8efc66be64258df15410a9bb80821dd8}{Jugador}} (string \mbox{\hyperlink{class_jugador_aa2a31d0090066d6ac579e3ac12734c60}{Nombre}})
+\item 
+\mbox{\hyperlink{class_library_1_1_partida}{Partida}} \mbox{\hyperlink{class_jugador_aec8c45e442dd859ab881a7b76749ff13}{Ver\+Partidas\+Disponibles\+YUnirse}} ()
+\item 
+bool \mbox{\hyperlink{class_jugador_afd3e43bc231478ccd2a1e625b991302a}{Verificar\+Disponibilidad}} (\mbox{\hyperlink{class_coordenada}{Coordenada}}\mbox{[}$\,$\mbox{]} coordenadas)
+\item 
+void \mbox{\hyperlink{class_jugador_a69a61dd00be41b04b96c4f9cbda5b468}{Colocar\+Barcos}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_jugador_aa2a31d0090066d6ac579e3ac12734c60}{Nombre}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+List$<$ \mbox{\hyperlink{interface_library_1_1_i_barco}{IBarco}} $>$ \mbox{\hyperlink{class_jugador_ad3bc857036c40f08bd2c604329efbe33}{Barcos}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_library_1_1_tablero}{Tablero}} \mbox{\hyperlink{class_jugador_a394addd0f6ee2c7e8994c6b1c614e95f}{Tablero}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_coordenada}{Coordenada}} \mbox{\hyperlink{class_jugador_ab2c11ddadd727b3d68f9a18a548122bf}{Ultimo\+Disparo}} = new \mbox{\hyperlink{class_coordenada}{Coordenada}}(0, 0)\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+List$<$ int $>$ \mbox{\hyperlink{class_jugador_aeca7becaef55e6fa8f723640ccf87d55}{Disparos\+Realizados}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_jugador_adbf61b171790225f2db6b99a8ec700e5}{Id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Se crea la clase \doxylink{class_jugador}{Jugador}. La misma representa al usuario, y sus habilidades dentro del juego. Tiene su nombre, su lista de barcos, y su acceso a los tableros. La clase cumple con el SRP porque tiene responsabilidades claras y únicas, como gestionar su información personal, la lista de barcos, el tablero, y realizar la colocación de barcos. La clase tambien tiene uso de Interfaces y Polimorfismo\+: La lista de barcos es de tipo List$<$\+IBarco$>$, lo que permite el polimorfismo al trabajar con diferentes tipos de barcos a través de la interfaz IBarco. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_jugador_a8efc66be64258df15410a9bb80821dd8}\label{class_jugador_a8efc66be64258df15410a9bb80821dd8} 
+\index{Jugador@{Jugador}!Jugador@{Jugador}}
+\index{Jugador@{Jugador}!Jugador@{Jugador}}
+\doxysubsubsection{\texorpdfstring{Jugador()}{Jugador()}}
+{\footnotesize\ttfamily Jugador.\+Jugador (\begin{DoxyParamCaption}\item[{string}]{Nombre }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_jugador_a69a61dd00be41b04b96c4f9cbda5b468}\label{class_jugador_a69a61dd00be41b04b96c4f9cbda5b468} 
+\index{Jugador@{Jugador}!ColocarBarcos@{ColocarBarcos}}
+\index{ColocarBarcos@{ColocarBarcos}!Jugador@{Jugador}}
+\doxysubsubsection{\texorpdfstring{ColocarBarcos()}{ColocarBarcos()}}
+{\footnotesize\ttfamily void Jugador.\+Colocar\+Barcos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Se introuce el metodo Colocar\+Barcos, introduce al jugador la capacidad de colocar en el tablero los barcos que le pertenecen y estan en su lista correspontiente. Para ello el metodo se basa en la logitud del barco en cuestion, y en base a las coordenadas que ocupa el barco, se lo posiciona en el mapa. Solicita al jugador que especifique la ubicación de los barcos
+
+Lee la entrada del usuario y la divide en fila y columna
+
+Preguntar al usuario la orientación
+
+Reinicia el bucle para que el usuario ingrese valores válidos.
+
+Verificamos que la entrada consista en dos números enteros
+
+instancia de la clase \doxylink{class_coordenada}{Coordenada} con la entrada del usuario
+
+Verifica si ya hay un barco del mismo tamaño en el tablero
+
+Verifica si la ubicación es válida para el tamaño del barco y si está disponible en el tablero\Hypertarget{class_jugador_afd3e43bc231478ccd2a1e625b991302a}\label{class_jugador_afd3e43bc231478ccd2a1e625b991302a} 
+\index{Jugador@{Jugador}!VerificarDisponibilidad@{VerificarDisponibilidad}}
+\index{VerificarDisponibilidad@{VerificarDisponibilidad}!Jugador@{Jugador}}
+\doxysubsubsection{\texorpdfstring{VerificarDisponibilidad()}{VerificarDisponibilidad()}}
+{\footnotesize\ttfamily bool Jugador.\+Verificar\+Disponibilidad (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_coordenada}{Coordenada}}\mbox{[}$\,$\mbox{]}}]{coordenadas }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+La celda no está disponible, está ocupada por otro barco\Hypertarget{class_jugador_aec8c45e442dd859ab881a7b76749ff13}\label{class_jugador_aec8c45e442dd859ab881a7b76749ff13} 
+\index{Jugador@{Jugador}!VerPartidasDisponiblesYUnirse@{VerPartidasDisponiblesYUnirse}}
+\index{VerPartidasDisponiblesYUnirse@{VerPartidasDisponiblesYUnirse}!Jugador@{Jugador}}
+\doxysubsubsection{\texorpdfstring{VerPartidasDisponiblesYUnirse()}{VerPartidasDisponiblesYUnirse()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_library_1_1_partida}{Partida}} Jugador.\+Ver\+Partidas\+Disponibles\+YUnirse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_jugador_ad3bc857036c40f08bd2c604329efbe33}\label{class_jugador_ad3bc857036c40f08bd2c604329efbe33} 
+\index{Jugador@{Jugador}!Barcos@{Barcos}}
+\index{Barcos@{Barcos}!Jugador@{Jugador}}
+\doxysubsubsection{\texorpdfstring{Barcos}{Barcos}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{interface_library_1_1_i_barco}{IBarco}}$>$ Jugador.\+Barcos\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_jugador_aeca7becaef55e6fa8f723640ccf87d55}\label{class_jugador_aeca7becaef55e6fa8f723640ccf87d55} 
+\index{Jugador@{Jugador}!DisparosRealizados@{DisparosRealizados}}
+\index{DisparosRealizados@{DisparosRealizados}!Jugador@{Jugador}}
+\doxysubsubsection{\texorpdfstring{DisparosRealizados}{DisparosRealizados}}
+{\footnotesize\ttfamily List$<$int$>$ Jugador.\+Disparos\+Realizados\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_jugador_adbf61b171790225f2db6b99a8ec700e5}\label{class_jugador_adbf61b171790225f2db6b99a8ec700e5} 
+\index{Jugador@{Jugador}!Id@{Id}}
+\index{Id@{Id}!Jugador@{Jugador}}
+\doxysubsubsection{\texorpdfstring{Id}{Id}}
+{\footnotesize\ttfamily int Jugador.\+Id\hspace{0.3cm}{\ttfamily [get]}}
+
+\Hypertarget{class_jugador_aa2a31d0090066d6ac579e3ac12734c60}\label{class_jugador_aa2a31d0090066d6ac579e3ac12734c60} 
+\index{Jugador@{Jugador}!Nombre@{Nombre}}
+\index{Nombre@{Nombre}!Jugador@{Jugador}}
+\doxysubsubsection{\texorpdfstring{Nombre}{Nombre}}
+{\footnotesize\ttfamily string Jugador.\+Nombre\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_jugador_a394addd0f6ee2c7e8994c6b1c614e95f}\label{class_jugador_a394addd0f6ee2c7e8994c6b1c614e95f} 
+\index{Jugador@{Jugador}!Tablero@{Tablero}}
+\index{Tablero@{Tablero}!Jugador@{Jugador}}
+\doxysubsubsection{\texorpdfstring{Tablero}{Tablero}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_library_1_1_tablero}{Tablero}} Jugador.\+Tablero\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_jugador_ab2c11ddadd727b3d68f9a18a548122bf}\label{class_jugador_ab2c11ddadd727b3d68f9a18a548122bf} 
+\index{Jugador@{Jugador}!UltimoDisparo@{UltimoDisparo}}
+\index{UltimoDisparo@{UltimoDisparo}!Jugador@{Jugador}}
+\doxysubsubsection{\texorpdfstring{UltimoDisparo}{UltimoDisparo}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_coordenada}{Coordenada}} Jugador.\+Ultimo\+Disparo = new \mbox{\hyperlink{class_coordenada}{Coordenada}}(0, 0)\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Library/\+Clases/\mbox{\hyperlink{_jugador_8cs}{Jugador.\+cs}}\end{DoxyCompactItemize}

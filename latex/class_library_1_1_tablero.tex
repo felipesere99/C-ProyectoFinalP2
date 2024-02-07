@@ -1,0 +1,78 @@
+\doxysection{Library.\+Tablero Class Reference}
+\hypertarget{class_library_1_1_tablero}{}\label{class_library_1_1_tablero}\index{Library.Tablero@{Library.Tablero}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_library_1_1_tablero_a4dce029c072b0c736e449885c850b98e}{Tablero}} ()
+\item 
+bool \mbox{\hyperlink{class_library_1_1_tablero_a993d3e6a1bdaff58156ceaca3912fd43}{Es\+Ubicacion\+Valida}} (\mbox{\hyperlink{class_coordenada}{Coordenada}} ubicacion, int tamano\+Barco)
+\item 
+bool \mbox{\hyperlink{class_library_1_1_tablero_aeb13b4264ee703eaf5c29e9083a01484}{Tiene\+Barco\+Del\+Mismo\+Tamano}} (int tamano\+Barco)
+\item 
+void \mbox{\hyperlink{class_library_1_1_tablero_a24b31f872114d535516c519cf149b356}{Agregar\+Barcos\+Al\+Tablero}} (\mbox{\hyperlink{interface_library_1_1_i_barco}{IBarco}} Barco, \mbox{\hyperlink{namespace_library_a78e8c44420d521ccfc8e892ed32af567}{Orientacion}} orientacion)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_library_1_1_tablero_a51a01993884dba0d54af51d1f4224fec}{Largo}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int \mbox{\hyperlink{class_library_1_1_tablero_a634b6cc43de33d9cb262a58ca28b7a44}{Ancho}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+int\mbox{[},\mbox{]} \mbox{\hyperlink{class_library_1_1_tablero_a1b7f01ce3d21825da804488683cedec9}{tablero}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_library_1_1_tablero_a4dce029c072b0c736e449885c850b98e}\label{class_library_1_1_tablero_a4dce029c072b0c736e449885c850b98e} 
+\index{Library.Tablero@{Library.Tablero}!Tablero@{Tablero}}
+\index{Tablero@{Tablero}!Library.Tablero@{Library.Tablero}}
+\doxysubsubsection{\texorpdfstring{Tablero()}{Tablero()}}
+{\footnotesize\ttfamily Library.\+Tablero.\+Tablero (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Se establece clase Tablero. La misma gestiona el mismo. Se trata de una pieza 10x10, basada en el juego de mesa original. A eso se le agrega un metodo que se encarga de modificar el display del tablero, marcando en uno los cuadros ubicados por los barcos, y en otro, los cuadros a los que se ha disparado.
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_library_1_1_tablero_a24b31f872114d535516c519cf149b356}\label{class_library_1_1_tablero_a24b31f872114d535516c519cf149b356} 
+\index{Library.Tablero@{Library.Tablero}!AgregarBarcosAlTablero@{AgregarBarcosAlTablero}}
+\index{AgregarBarcosAlTablero@{AgregarBarcosAlTablero}!Library.Tablero@{Library.Tablero}}
+\doxysubsubsection{\texorpdfstring{AgregarBarcosAlTablero()}{AgregarBarcosAlTablero()}}
+{\footnotesize\ttfamily void Library.\+Tablero.\+Agregar\+Barcos\+Al\+Tablero (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_library_1_1_i_barco}{IBarco}}}]{Barco,  }\item[{\mbox{\hyperlink{namespace_library_a78e8c44420d521ccfc8e892ed32af567}{Orientacion}}}]{orientacion }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_library_1_1_tablero_a993d3e6a1bdaff58156ceaca3912fd43}\label{class_library_1_1_tablero_a993d3e6a1bdaff58156ceaca3912fd43} 
+\index{Library.Tablero@{Library.Tablero}!EsUbicacionValida@{EsUbicacionValida}}
+\index{EsUbicacionValida@{EsUbicacionValida}!Library.Tablero@{Library.Tablero}}
+\doxysubsubsection{\texorpdfstring{EsUbicacionValida()}{EsUbicacionValida()}}
+{\footnotesize\ttfamily bool Library.\+Tablero.\+Es\+Ubicacion\+Valida (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_coordenada}{Coordenada}}}]{ubicacion,  }\item[{int}]{tamano\+Barco }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_library_1_1_tablero_aeb13b4264ee703eaf5c29e9083a01484}\label{class_library_1_1_tablero_aeb13b4264ee703eaf5c29e9083a01484} 
+\index{Library.Tablero@{Library.Tablero}!TieneBarcoDelMismoTamano@{TieneBarcoDelMismoTamano}}
+\index{TieneBarcoDelMismoTamano@{TieneBarcoDelMismoTamano}!Library.Tablero@{Library.Tablero}}
+\doxysubsubsection{\texorpdfstring{TieneBarcoDelMismoTamano()}{TieneBarcoDelMismoTamano()}}
+{\footnotesize\ttfamily bool Library.\+Tablero.\+Tiene\+Barco\+Del\+Mismo\+Tamano (\begin{DoxyParamCaption}\item[{int}]{tamano\+Barco }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_library_1_1_tablero_a634b6cc43de33d9cb262a58ca28b7a44}\label{class_library_1_1_tablero_a634b6cc43de33d9cb262a58ca28b7a44} 
+\index{Library.Tablero@{Library.Tablero}!Ancho@{Ancho}}
+\index{Ancho@{Ancho}!Library.Tablero@{Library.Tablero}}
+\doxysubsubsection{\texorpdfstring{Ancho}{Ancho}}
+{\footnotesize\ttfamily int Library.\+Tablero.\+Ancho\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_library_1_1_tablero_a51a01993884dba0d54af51d1f4224fec}\label{class_library_1_1_tablero_a51a01993884dba0d54af51d1f4224fec} 
+\index{Library.Tablero@{Library.Tablero}!Largo@{Largo}}
+\index{Largo@{Largo}!Library.Tablero@{Library.Tablero}}
+\doxysubsubsection{\texorpdfstring{Largo}{Largo}}
+{\footnotesize\ttfamily int Library.\+Tablero.\+Largo\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_library_1_1_tablero_a1b7f01ce3d21825da804488683cedec9}\label{class_library_1_1_tablero_a1b7f01ce3d21825da804488683cedec9} 
+\index{Library.Tablero@{Library.Tablero}!tablero@{tablero}}
+\index{tablero@{tablero}!Library.Tablero@{Library.Tablero}}
+\doxysubsubsection{\texorpdfstring{tablero}{tablero}}
+{\footnotesize\ttfamily int \mbox{[},\mbox{]} Library.\+Tablero.\+tablero\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Library/\+Clases/\mbox{\hyperlink{_tablero_8cs}{Tablero.\+cs}}\end{DoxyCompactItemize}

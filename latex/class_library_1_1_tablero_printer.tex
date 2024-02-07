@@ -1,0 +1,52 @@
+\doxysection{Library.\+Tablero\+Printer Class Reference}
+\hypertarget{class_library_1_1_tablero_printer}{}\label{class_library_1_1_tablero_printer}\index{Library.TableroPrinter@{Library.TableroPrinter}}
+Inheritance diagram for Library.\+Tablero\+Printer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_library_1_1_tablero_printer}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_library_1_1_tablero_printer_a3dea3b38c0277a22df9fbf0521ab3169}{Imprimir\+Tablero\+Con\+Barcos}} (\mbox{\hyperlink{class_jugador}{Jugador}} jugador)
+\item 
+void \mbox{\hyperlink{class_library_1_1_tablero_printer_a322aafea3915c40a95a0974ee406cc37}{Imprimir\+Tablero\+Con\+Disparos}} (\mbox{\hyperlink{class_jugador}{Jugador}} jugador)
+\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interface_library_1_1_i_printer_a49b6ea9908fc2d738e609e5ed0b26381}{Imprimir\+Tablero\+Con\+Barcos}} (\mbox{\hyperlink{class_jugador}{Jugador}} jugador)
+\item 
+void \mbox{\hyperlink{interface_library_1_1_i_printer_a6fa601c47a841984350ab097e0eab410}{Imprimir\+Tablero\+Con\+Disparos}} (\mbox{\hyperlink{class_jugador}{Jugador}} jugador)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+La clase Tablero\+Printer es bastante autoexplicativa, es una clase que utlizando como base la interfaz IPrinter, se encarga de implimir lo creado en la clase tablero. La clase implementa la interfaz IPrinter y proporciona implementaciones específicas para los métodos Imprimir\+Tablero\+Con\+Barcos e Imprimir\+Tablero\+Con\+Disparos. Esto sigue el principio de ISP al asegurarse de que las clases no estén obligadas a implementar métodos que no utilizan. La clase tambien tiene la responsabilidad de imprimir tableros, pero no de gestionar la lógica del juego ni de almacenar la información del tablero, esto sigue el SRP. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_library_1_1_tablero_printer_a3dea3b38c0277a22df9fbf0521ab3169}\label{class_library_1_1_tablero_printer_a3dea3b38c0277a22df9fbf0521ab3169} 
+\index{Library.TableroPrinter@{Library.TableroPrinter}!ImprimirTableroConBarcos@{ImprimirTableroConBarcos}}
+\index{ImprimirTableroConBarcos@{ImprimirTableroConBarcos}!Library.TableroPrinter@{Library.TableroPrinter}}
+\doxysubsubsection{\texorpdfstring{ImprimirTableroConBarcos()}{ImprimirTableroConBarcos()}}
+{\footnotesize\ttfamily void Library.\+Tablero\+Printer.\+Imprimir\+Tablero\+Con\+Barcos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_jugador}{Jugador}}}]{jugador }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Este primer tablero, le muestra al jugador el tablero que contiene sus barcos 
+
+Implements \mbox{\hyperlink{interface_library_1_1_i_printer_a49b6ea9908fc2d738e609e5ed0b26381}{Library.\+IPrinter}}.
+
+\Hypertarget{class_library_1_1_tablero_printer_a322aafea3915c40a95a0974ee406cc37}\label{class_library_1_1_tablero_printer_a322aafea3915c40a95a0974ee406cc37} 
+\index{Library.TableroPrinter@{Library.TableroPrinter}!ImprimirTableroConDisparos@{ImprimirTableroConDisparos}}
+\index{ImprimirTableroConDisparos@{ImprimirTableroConDisparos}!Library.TableroPrinter@{Library.TableroPrinter}}
+\doxysubsubsection{\texorpdfstring{ImprimirTableroConDisparos()}{ImprimirTableroConDisparos()}}
+{\footnotesize\ttfamily void Library.\+Tablero\+Printer.\+Imprimir\+Tablero\+Con\+Disparos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_jugador}{Jugador}}}]{jugador }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Este segundo tablero le muestra al jugador el tablero con los lugares a donde ha disparado anteriormente 
+
+Implements \mbox{\hyperlink{interface_library_1_1_i_printer_a6fa601c47a841984350ab097e0eab410}{Library.\+IPrinter}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Library/\+Clases/\mbox{\hyperlink{_tablero_printer_8cs}{Tablero\+Printer.\+cs}}\end{DoxyCompactItemize}

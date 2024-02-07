@@ -1,0 +1,42 @@
+\doxysection{Library.\+Juego Class Reference}
+\hypertarget{class_library_1_1_juego}{}\label{class_library_1_1_juego}\index{Library.Juego@{Library.Juego}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_library_1_1_juego_a95c04ee9e79b68e510f4184b40d2870c}{Iniciar\+Juego}} (\mbox{\hyperlink{class_library_1_1_partida}{Partida}} partida)
+\item 
+void \mbox{\hyperlink{class_library_1_1_juego_af4aeb453fe90f3605af587eda7591004}{Finalizar\+Juego}} (\mbox{\hyperlink{class_library_1_1_partida}{Partida}} partida)
+\item 
+void \mbox{\hyperlink{class_library_1_1_juego_ae756b0d8426b62a0d3622a07a44dc922}{Realizar\+Jugada}} (\mbox{\hyperlink{class_jugador}{Jugador}} jugador, \mbox{\hyperlink{class_library_1_1_partida}{Partida}} partida)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Creacion de la clase Juego para quitar responsabilidades a partida y jugador. Cada metodo tiene una responsabilidad unica siguiendo el SRP. El código permite la extensión sin necesidad de modificar el código existente siguiendo el OCP 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_library_1_1_juego_af4aeb453fe90f3605af587eda7591004}\label{class_library_1_1_juego_af4aeb453fe90f3605af587eda7591004} 
+\index{Library.Juego@{Library.Juego}!FinalizarJuego@{FinalizarJuego}}
+\index{FinalizarJuego@{FinalizarJuego}!Library.Juego@{Library.Juego}}
+\doxysubsubsection{\texorpdfstring{FinalizarJuego()}{FinalizarJuego()}}
+{\footnotesize\ttfamily void Library.\+Juego.\+Finalizar\+Juego (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_library_1_1_partida}{Partida}}}]{partida }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Lógica para la finalización del juego \Hypertarget{class_library_1_1_juego_a95c04ee9e79b68e510f4184b40d2870c}\label{class_library_1_1_juego_a95c04ee9e79b68e510f4184b40d2870c} 
+\index{Library.Juego@{Library.Juego}!IniciarJuego@{IniciarJuego}}
+\index{IniciarJuego@{IniciarJuego}!Library.Juego@{Library.Juego}}
+\doxysubsubsection{\texorpdfstring{IniciarJuego()}{IniciarJuego()}}
+{\footnotesize\ttfamily void Library.\+Juego.\+Iniciar\+Juego (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_library_1_1_partida}{Partida}}}]{partida }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_library_1_1_juego_ae756b0d8426b62a0d3622a07a44dc922}\label{class_library_1_1_juego_ae756b0d8426b62a0d3622a07a44dc922} 
+\index{Library.Juego@{Library.Juego}!RealizarJugada@{RealizarJugada}}
+\index{RealizarJugada@{RealizarJugada}!Library.Juego@{Library.Juego}}
+\doxysubsubsection{\texorpdfstring{RealizarJugada()}{RealizarJugada()}}
+{\footnotesize\ttfamily void Library.\+Juego.\+Realizar\+Jugada (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_jugador}{Jugador}}}]{jugador,  }\item[{\mbox{\hyperlink{class_library_1_1_partida}{Partida}}}]{partida }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Lógica para realizar una jugada en el juego Chequeamos si es el turno del jugador
+
+Realizamos el disparo
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Library/\+Clases/\mbox{\hyperlink{_juego_8cs}{Juego.\+cs}}\end{DoxyCompactItemize}

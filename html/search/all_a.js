@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['ibarco_0',['IBarco',['../interface_library_1_1_i_barco.html',1,'Library']]],
+  ['ibarco_2ecs_1',['IBarco.cs',['../_i_barco_8cs.html',1,'']]],
+  ['id_2',['Id',['../class_jugador.html#adbf61b171790225f2db6b99a8ec700e5',1,'Jugador.Id'],['../class_library_1_1_partida.html#a473a030a4c5e810c2b852d199a3a8b96',1,'Library.Partida.Id']]],
+  ['ihandler_3',['IHandler',['../interface_ucu_1_1_poo_1_1_telegram_bot_1_1_i_handler.html',1,'Ucu::Poo::TelegramBot']]],
+  ['ihandler_2ecs_4',['IHandler.cs',['../_i_handler_8cs.html',1,'']]],
+  ['impacto_5',['impacto',['../class_disparo.html#aae1c9d42899db3ed877d2871c2457eb9',1,'Disparo']]],
+  ['impactoenbarco_6',['ImpactoEnBarco',['../class_disparo.html#aa9dc025a73c86371483cf0a701dedcbb',1,'Disparo']]],
+  ['imprimirtableroconbarcos_7',['ImprimirTableroConBarcos',['../interface_library_1_1_i_printer.html#a49b6ea9908fc2d738e609e5ed0b26381',1,'Library.IPrinter.ImprimirTableroConBarcos()'],['../class_library_1_1_tablero_printer.html#a3dea3b38c0277a22df9fbf0521ab3169',1,'Library.TableroPrinter.ImprimirTableroConBarcos()']]],
+  ['imprimirtablerocondisparos_8',['ImprimirTableroConDisparos',['../interface_library_1_1_i_printer.html#a6fa601c47a841984350ab097e0eab410',1,'Library.IPrinter.ImprimirTableroConDisparos()'],['../class_library_1_1_tablero_printer.html#a322aafea3915c40a95a0974ee406cc37',1,'Library.TableroPrinter.ImprimirTableroConDisparos()']]],
+  ['iniciarjuego_9',['IniciarJuego',['../class_library_1_1_juego.html#a95c04ee9e79b68e510f4184b40d2870c',1,'Library::Juego']]],
+  ['iniciarpartida_5fesperarsegundojugador_10',['IniciarPartida_EsperarSegundoJugador',['../class_library_1_1_tests_1_1_testdeusuario1.html#a3c37d76f9603679b43aa20899b4b8b86',1,'Library::Tests::Testdeusuario1']]],
+  ['instance_11',['Instance',['../class_administrador.html#acc92494b9d417291ab20507c0182ead2',1,'Administrador']]],
+  ['internalcancel_12',['InternalCancel',['../class_ucu_1_1_poo_1_1_telegram_bot_1_1_base_handler.html#a56165289f3a26aecab3c75bb74bac0e6',1,'Ucu::Poo::TelegramBot::BaseHandler']]],
+  ['internalhandle_13',['InternalHandle',['../class_ucu_1_1_poo_1_1_telegram_bot_1_1_base_handler.html#a3e44e3dc56f25bc47bfc28eccc2d532e',1,'Ucu.Poo.TelegramBot.BaseHandler.InternalHandle()'],['../class_ucu_1_1_poo_1_1_telegram_bot_1_1_buscar_partida_handler.html#af2a4e067b6e9b56ee6e05e87ee861f8b',1,'Ucu.Poo.TelegramBot.BuscarPartidaHandler.InternalHandle()'],['../class_ucu_1_1_poo_1_1_telegram_bot_1_1_colocar_barcos_handler.html#a7544b11feaa20677a4c6526dca232e2f',1,'Ucu.Poo.TelegramBot.ColocarBarcosHandler.InternalHandle()'],['../class_ucu_1_1_poo_1_1_telegram_bot_1_1_crear_partida_handler.html#a63cb9cf23471edf4ed4504948dda7a03',1,'Ucu.Poo.TelegramBot.CrearPartidaHandler.InternalHandle()'],['../class_ucu_1_1_poo_1_1_telegram_bot_1_1_ver_tablero_handler.html#af87eeb4cb9e13d9c90bb7f34cdf9b8e1',1,'Ucu.Poo.TelegramBot.VerTableroHandler.InternalHandle()']]],
+  ['iprinter_14',['IPrinter',['../interface_library_1_1_i_printer.html',1,'Library']]],
+  ['iprinter_2ecs_15',['IPrinter.cs',['../_i_printer_8cs.html',1,'']]]
+];

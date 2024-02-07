@@ -1,0 +1,103 @@
+\doxysection{Ucu.\+Poo.\+Telegram\+Bot.\+Ver\+Tablero\+Handler Class Reference}
+\hypertarget{class_ucu_1_1_poo_1_1_telegram_bot_1_1_ver_tablero_handler}{}\label{class_ucu_1_1_poo_1_1_telegram_bot_1_1_ver_tablero_handler}\index{Ucu.Poo.TelegramBot.VerTableroHandler@{Ucu.Poo.TelegramBot.VerTableroHandler}}
+
+
+Un \"{}handler\"{} del patrón Chain of Responsibility que implementa el comando \"{}chau\"{}.  
+
+
+Inheritance diagram for Ucu.\+Poo.\+Telegram\+Bot.\+Ver\+Tablero\+Handler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_ucu_1_1_poo_1_1_telegram_bot_1_1_ver_tablero_handler}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ucu_1_1_poo_1_1_telegram_bot_1_1_ver_tablero_handler_a093301221615cee4a2a3dfb657f5a560}{Ver\+Tablero\+Handler}} (\mbox{\hyperlink{class_ucu_1_1_poo_1_1_telegram_bot_1_1_base_handler}{Base\+Handler}} next)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_ucu_1_1_poo_1_1_telegram_bot_1_1_base_handler}{Ucu.\+Poo.\+Telegram\+Bot.\+Base\+Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ucu_1_1_poo_1_1_telegram_bot_1_1_base_handler_a9f17f1da0d94caad88eb2a9303a99994}{Base\+Handler}} (\mbox{\hyperlink{interface_ucu_1_1_poo_1_1_telegram_bot_1_1_i_handler}{IHandler}} next)
+\begin{DoxyCompactList}\small\item\em Inicializa una nueva instancia de la clase Base\+Handler. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_ucu_1_1_poo_1_1_telegram_bot_1_1_base_handler_afe48cf9732acc46d189f212f18e9d105}{Base\+Handler}} (string\mbox{[}$\,$\mbox{]} keywords, \mbox{\hyperlink{class_ucu_1_1_poo_1_1_telegram_bot_1_1_base_handler}{Base\+Handler}} next)
+\begin{DoxyCompactList}\small\item\em Inicializa una nueva instancia de la clase Base\+Handler con una lista de comandos. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{interface_ucu_1_1_poo_1_1_telegram_bot_1_1_i_handler}{IHandler}} \mbox{\hyperlink{class_ucu_1_1_poo_1_1_telegram_bot_1_1_base_handler_a40f0bf2f0e5935632c6f71c95faf2f30}{Handle}} (Message message, out string response)
+\begin{DoxyCompactList}\small\item\em Procesa el mensaje o lo pasa al siguiente \"{}handler\"{} si existe. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_ucu_1_1_poo_1_1_telegram_bot_1_1_base_handler_a5b44f9d382a15cd5322df4dd8a0756ff}{Cancel}} (Message message)
+\begin{DoxyCompactList}\small\item\em Retorna este \"{}handler\"{} al estado inicial. En los \"{}handler\"{} sin estado no hace nada. Los \"{}handlers\"{} que procesan varios mensajes cambiando de estado entre mensajes deben sobreescribir este método para volver al estado inicial. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_ucu_1_1_poo_1_1_telegram_bot_1_1_i_handler}{IHandler}}? \mbox{\hyperlink{interface_ucu_1_1_poo_1_1_telegram_bot_1_1_i_handler_a264c6bc650c3fbfa3bc2b3a5b5361bbf}{Handle}} (Message message, out string response)
+\begin{DoxyCompactList}\small\item\em Procesa el mensaje o la pasa al siguiente \"{}handler\"{} si existe. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_ucu_1_1_poo_1_1_telegram_bot_1_1_i_handler_a6b55f4c2d3bd85caaf076e03f02e4379}{Cancel}} (Message message)
+\begin{DoxyCompactList}\small\item\em Retorna este \"{}handler\"{} al estado inicial y cancela el próximo \"{}handler\"{} si existe. Es utilizado para que los \"{}handlers\"{} que procesan varios mensajes cambiando de estado entre mensajes puedan volver al estado inicial en caso de error por ejemplo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_ucu_1_1_poo_1_1_telegram_bot_1_1_ver_tablero_handler_af87eeb4cb9e13d9c90bb7f34cdf9b8e1}{Internal\+Handle}} (Message message, out string response)
+\begin{DoxyCompactList}\small\item\em Este método debe ser sobreescrito por las clases sucesores. La clase sucesora procesa el mensaje y asigna la respuesta al mensaje. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_ucu_1_1_poo_1_1_telegram_bot_1_1_base_handler}{Ucu.\+Poo.\+Telegram\+Bot.\+Base\+Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+abstract void \mbox{\hyperlink{class_ucu_1_1_poo_1_1_telegram_bot_1_1_base_handler_a3e44e3dc56f25bc47bfc28eccc2d532e}{Internal\+Handle}} (Message message, out string response)
+\begin{DoxyCompactList}\small\item\em Este método debe ser sobreescrito por las clases sucesores. La clase sucesora procesa el mensaje y asigna la respuesta al mensaje. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_ucu_1_1_poo_1_1_telegram_bot_1_1_base_handler_a56165289f3a26aecab3c75bb74bac0e6}{Internal\+Cancel}} (Message message)
+\begin{DoxyCompactList}\small\item\em Este método puede ser sobreescrito en las clases sucesores que procesan varios mensajes cambiando de estado entre mensajes deben sobreescribir este método para volver al estado inicial. En la clase base no hace nada. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_ucu_1_1_poo_1_1_telegram_bot_1_1_base_handler_acfa9316a5eea0d825357cef83f6c8d51}{Can\+Handle}} (Message message)
+\begin{DoxyCompactList}\small\item\em Determina si este \"{}handler\"{} puede procesar el mensaje. En la clase base se utiliza el array Base\+Handler.\+Keywords para buscar el texto en el mensaje ignorando mayúsculas y minúsculas. Las clases sucesores pueden sobreescribir este método para proveer otro mecanismo para determina si procesan o no un mensaje. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_ucu_1_1_poo_1_1_telegram_bot_1_1_base_handler}{Ucu.\+Poo.\+Telegram\+Bot.\+Base\+Handler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_ucu_1_1_poo_1_1_telegram_bot_1_1_i_handler}{IHandler}} \mbox{\hyperlink{class_ucu_1_1_poo_1_1_telegram_bot_1_1_base_handler_aedb5618c9409894605a099eeecdd7890}{Next}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Obtiene el próximo \"{}handler\"{}. \end{DoxyCompactList}\item 
+string\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_ucu_1_1_poo_1_1_telegram_bot_1_1_base_handler_a7dbdcf472763c25db0e67cee73d2fb1c}{Keywords}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Obtiene o asigna el conjunto de palabras clave que este \"{}handler\"{} puede procesar. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{interface_ucu_1_1_poo_1_1_telegram_bot_1_1_i_handler}{Ucu.\+Poo.\+Telegram\+Bot.\+IHandler}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_ucu_1_1_poo_1_1_telegram_bot_1_1_i_handler}{IHandler}}? \mbox{\hyperlink{interface_ucu_1_1_poo_1_1_telegram_bot_1_1_i_handler_a4f5f9298895f940dae45bfaed3c9553f}{Next}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Obtiene el próximo \"{}handler\"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Un \"{}handler\"{} del patrón Chain of Responsibility que implementa el comando \"{}chau\"{}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_ucu_1_1_poo_1_1_telegram_bot_1_1_ver_tablero_handler_a093301221615cee4a2a3dfb657f5a560}\label{class_ucu_1_1_poo_1_1_telegram_bot_1_1_ver_tablero_handler_a093301221615cee4a2a3dfb657f5a560} 
+\index{Ucu.Poo.TelegramBot.VerTableroHandler@{Ucu.Poo.TelegramBot.VerTableroHandler}!VerTableroHandler@{VerTableroHandler}}
+\index{VerTableroHandler@{VerTableroHandler}!Ucu.Poo.TelegramBot.VerTableroHandler@{Ucu.Poo.TelegramBot.VerTableroHandler}}
+\doxysubsubsection{\texorpdfstring{VerTableroHandler()}{VerTableroHandler()}}
+{\footnotesize\ttfamily Ucu.\+Poo.\+Telegram\+Bot.\+Ver\+Tablero\+Handler.\+Ver\+Tablero\+Handler (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_ucu_1_1_poo_1_1_telegram_bot_1_1_base_handler}{Base\+Handler}}}]{next }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_ucu_1_1_poo_1_1_telegram_bot_1_1_ver_tablero_handler_af87eeb4cb9e13d9c90bb7f34cdf9b8e1}\label{class_ucu_1_1_poo_1_1_telegram_bot_1_1_ver_tablero_handler_af87eeb4cb9e13d9c90bb7f34cdf9b8e1} 
+\index{Ucu.Poo.TelegramBot.VerTableroHandler@{Ucu.Poo.TelegramBot.VerTableroHandler}!InternalHandle@{InternalHandle}}
+\index{InternalHandle@{InternalHandle}!Ucu.Poo.TelegramBot.VerTableroHandler@{Ucu.Poo.TelegramBot.VerTableroHandler}}
+\doxysubsubsection{\texorpdfstring{InternalHandle()}{InternalHandle()}}
+{\footnotesize\ttfamily override void Ucu.\+Poo.\+Telegram\+Bot.\+Ver\+Tablero\+Handler.\+Internal\+Handle (\begin{DoxyParamCaption}\item[{Message}]{message,  }\item[{out string}]{response }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Este método debe ser sobreescrito por las clases sucesores. La clase sucesora procesa el mensaje y asigna la respuesta al mensaje. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & El mensaje a procesar.\\
+\hline
+{\em response} & La respuesta al mensaje procesado.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_ucu_1_1_poo_1_1_telegram_bot_1_1_base_handler_a3e44e3dc56f25bc47bfc28eccc2d532e}{Ucu.\+Poo.\+Telegram\+Bot.\+Base\+Handler}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Program/\+Handlers/\mbox{\hyperlink{_ver_tablero_handler_8cs}{Ver\+Tablero\+Handler.\+cs}}\end{DoxyCompactItemize}

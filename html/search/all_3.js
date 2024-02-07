@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['barco2x1_0',['Barco2x1',['../class_library_1_1_barco2x1.html#aeda47cf4f912074db7ddd4415b193782',1,'Library.Barco2x1.Barco2x1()'],['../class_library_1_1_barco2x1.html',1,'Library.Barco2x1']]],
+  ['barco2x1_2ecs_1',['Barco2x1.cs',['../_barco2x1_8cs.html',1,'']]],
+  ['barco2x1test_2ecs_2',['Barco2x1Test.cs',['../_barco2x1_test_8cs.html',1,'']]],
+  ['barco2x1tests_3',['Barco2x1Tests',['../class_library_1_1_tests_1_1_barco2x1_tests.html',1,'Library::Tests']]],
+  ['barco3x1_4',['Barco3x1',['../class_library_1_1_barco3x1.html#aca936b5aa521ed2da17a41f8ba1bf4d5',1,'Library.Barco3x1.Barco3x1()'],['../class_library_1_1_barco3x1.html',1,'Library.Barco3x1']]],
+  ['barco3x1_2ecs_5',['Barco3x1.cs',['../_barco3x1_8cs.html',1,'']]],
+  ['barco3x1test_2ecs_6',['Barco3x1Test.cs',['../_barco3x1_test_8cs.html',1,'']]],
+  ['barco3x1tests_7',['Barco3x1Tests',['../class_library_1_1_tests_1_1_barco3x1_tests.html',1,'Library::Tests']]],
+  ['barco4x1_8',['Barco4x1',['../class_library_1_1_barco4x1.html#a624b3deaa35a1abbeb1db2a367a140b1',1,'Library.Barco4x1.Barco4x1()'],['../class_library_1_1_barco4x1.html',1,'Library.Barco4x1']]],
+  ['barco4x1_2ecs_9',['Barco4x1.cs',['../_barco4x1_8cs.html',1,'']]],
+  ['barco4x1test_2ecs_10',['Barco4x1Test.cs',['../_barco4x1_test_8cs.html',1,'']]],
+  ['barco4x1tests_11',['Barco4x1Tests',['../class_library_1_1_tests_1_1_barco4x1_tests.html',1,'Library::Tests']]],
+  ['barco5x1_12',['Barco5x1',['../class_library_1_1_barco5x1.html#a614e5f369868086017f0f36778bf5b64',1,'Library.Barco5x1.Barco5x1()'],['../class_library_1_1_barco5x1.html',1,'Library.Barco5x1']]],
+  ['barco5x1_2ecs_13',['Barco5x1.cs',['../_barco5x1_8cs.html',1,'']]],
+  ['barco5x1test_2ecs_14',['Barco5x1Test.cs',['../_barco5x1_test_8cs.html',1,'']]],
+  ['barco5x1tests_15',['Barco5x1Tests',['../class_library_1_1_tests_1_1_barco5x1_tests.html',1,'Library::Tests']]],
+  ['barcos_16',['Barcos',['../class_jugador.html#ad3bc857036c40f08bd2c604329efbe33',1,'Jugador']]],
+  ['barcoseagregaatablero_17',['BarcoSeAgregaATablero',['../class_library_1_1_tests_1_1_barco_test.html#a38275f63f35701c196fc57d8a8434aa8',1,'Library::Tests::BarcoTest']]],
+  ['barcotest_18',['BarcoTest',['../class_library_1_1_tests_1_1_barco_test.html',1,'Library::Tests']]],
+  ['barcotest_2ecs_19',['BarcoTest.cs',['../_barco_test_8cs.html',1,'']]],
+  ['basehandler_20',['BaseHandler',['../class_ucu_1_1_poo_1_1_telegram_bot_1_1_base_handler.html#a9f17f1da0d94caad88eb2a9303a99994',1,'Ucu.Poo.TelegramBot.BaseHandler.BaseHandler(IHandler next)'],['../class_ucu_1_1_poo_1_1_telegram_bot_1_1_base_handler.html#afe48cf9732acc46d189f212f18e9d105',1,'Ucu.Poo.TelegramBot.BaseHandler.BaseHandler(string[] keywords, BaseHandler next)'],['../class_ucu_1_1_poo_1_1_telegram_bot_1_1_base_handler.html',1,'Ucu.Poo.TelegramBot.BaseHandler']]],
+  ['basehandler_2ecs_21',['BaseHandler.cs',['../_base_handler_8cs.html',1,'']]],
+  ['buscarpartidahandler_22',['BuscarPartidaHandler',['../class_ucu_1_1_poo_1_1_telegram_bot_1_1_buscar_partida_handler.html#a61b25588af24125e40c5324664512c3b',1,'Ucu.Poo.TelegramBot.BuscarPartidaHandler.BuscarPartidaHandler()'],['../class_ucu_1_1_poo_1_1_telegram_bot_1_1_buscar_partida_handler.html',1,'Ucu.Poo.TelegramBot.BuscarPartidaHandler']]],
+  ['buscarpartidahandler_2ecs_23',['BuscarPartidaHandler.cs',['../_buscar_partida_handler_8cs.html',1,'']]]
+];

@@ -1,0 +1,143 @@
+\doxysection{Administrador Class Reference}
+\hypertarget{class_administrador}{}\label{class_administrador}\index{Administrador@{Administrador}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_library_1_1_partida}{Partida}} \mbox{\hyperlink{class_administrador_a25040598654c71a36f0c93ff70bbeaa8}{Unirse\+APartida}} (\mbox{\hyperlink{class_jugador}{Jugador}} jugador)
+\item 
+\mbox{\hyperlink{class_library_1_1_partida}{Partida}} \mbox{\hyperlink{class_administrador_a1ae21c6aba552f466c2f8b4e93d2bb8f}{Crear\+Partida}} (long id)
+\item 
+\mbox{\hyperlink{class_library_1_1_partida}{Partida}} \mbox{\hyperlink{class_administrador_af415514d33843867dcfc526eeee5cba4}{Obtener\+Partida\+Por\+Id}} (int id\+Partida)
+\item 
+void \mbox{\hyperlink{class_administrador_a8b020df31f91806ceb51a60926d37bfd}{Asignar\+Jugador}} (\mbox{\hyperlink{class_library_1_1_partida}{Partida}} partida, long id)
+\item 
+\mbox{\hyperlink{class_jugador}{Jugador}} \mbox{\hyperlink{class_administrador_abaa0f83676f1515d4b7ca6aafd71a00d}{Obtener\+Jugador\+Por\+Id}} (long id)
+\item 
+\mbox{\hyperlink{class_library_1_1_partida}{Partida}} \mbox{\hyperlink{class_administrador_aa5f5cf81ec05d0f31f8fddb003f68965}{Obtener\+Partida\+Disponible}} ()
+\item 
+\mbox{\hyperlink{class_library_1_1_partida}{Partida}} \mbox{\hyperlink{class_administrador_ae5269fba5a22d8a732eecc86cab0174a}{devolver\+Partida}} (long id\+Jugador)
+\item 
+List$<$ \mbox{\hyperlink{class_library_1_1_partida}{Partida}} $>$ \mbox{\hyperlink{class_administrador_a101ba2299137f7530c824a4b594c2f3c}{Obtener\+Partidas\+Comenzadas}} ()
+\item 
+List$<$ \mbox{\hyperlink{class_library_1_1_partida}{Partida}} $>$ \mbox{\hyperlink{class_administrador_a0e5b52c1b3dd1cd96be6a98f75e6d209}{Obtener\+Partidas\+Con\+Jugadores\+Esperando}} ()
+\item 
+void \mbox{\hyperlink{class_administrador_ab71490cc3b1783eb94f4f0e9e74328d4}{Finalizar\+Partida}} (\mbox{\hyperlink{class_library_1_1_partida}{Partida}} partida)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{class_library_1_1_partida}{Partida}} $>$ \mbox{\hyperlink{class_administrador_a9441cf536d15b4dc35bdd866ee6b99f1}{partidas}} = new List$<$\mbox{\hyperlink{class_library_1_1_partida}{Partida}}$>$()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static readonly object \mbox{\hyperlink{class_administrador_a2ed56b48cb2e8b4ebd4e78bde27e7576}{locker}} = new object()
+\item 
+static ? \mbox{\hyperlink{class_administrador}{Administrador}} \mbox{\hyperlink{class_administrador_accc0394665bbf166e0eeaba70a16ab1b}{\+\_\+\+Administrador}} = null
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_administrador}{Administrador}} \mbox{\hyperlink{class_administrador_acc92494b9d417291ab20507c0182ead2}{Instance}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+La clase \doxylink{class_administrador}{Administrador} implementa el patrón Singleton, asegurando que solo haya una instancia de la clase 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_administrador_a8b020df31f91806ceb51a60926d37bfd}\label{class_administrador_a8b020df31f91806ceb51a60926d37bfd} 
+\index{Administrador@{Administrador}!AsignarJugador@{AsignarJugador}}
+\index{AsignarJugador@{AsignarJugador}!Administrador@{Administrador}}
+\doxysubsubsection{\texorpdfstring{AsignarJugador()}{AsignarJugador()}}
+{\footnotesize\ttfamily void Administrador.\+Asignar\+Jugador (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_library_1_1_partida}{Partida}}}]{partida,  }\item[{long}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_administrador_a1ae21c6aba552f466c2f8b4e93d2bb8f}\label{class_administrador_a1ae21c6aba552f466c2f8b4e93d2bb8f} 
+\index{Administrador@{Administrador}!CrearPartida@{CrearPartida}}
+\index{CrearPartida@{CrearPartida}!Administrador@{Administrador}}
+\doxysubsubsection{\texorpdfstring{CrearPartida()}{CrearPartida()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_library_1_1_partida}{Partida}} Administrador.\+Crear\+Partida (\begin{DoxyParamCaption}\item[{long}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_administrador_ae5269fba5a22d8a732eecc86cab0174a}\label{class_administrador_ae5269fba5a22d8a732eecc86cab0174a} 
+\index{Administrador@{Administrador}!devolverPartida@{devolverPartida}}
+\index{devolverPartida@{devolverPartida}!Administrador@{Administrador}}
+\doxysubsubsection{\texorpdfstring{devolverPartida()}{devolverPartida()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_library_1_1_partida}{Partida}} Administrador.\+devolver\+Partida (\begin{DoxyParamCaption}\item[{long}]{id\+Jugador }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_administrador_ab71490cc3b1783eb94f4f0e9e74328d4}\label{class_administrador_ab71490cc3b1783eb94f4f0e9e74328d4} 
+\index{Administrador@{Administrador}!FinalizarPartida@{FinalizarPartida}}
+\index{FinalizarPartida@{FinalizarPartida}!Administrador@{Administrador}}
+\doxysubsubsection{\texorpdfstring{FinalizarPartida()}{FinalizarPartida()}}
+{\footnotesize\ttfamily void Administrador.\+Finalizar\+Partida (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_library_1_1_partida}{Partida}}}]{partida }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_administrador_abaa0f83676f1515d4b7ca6aafd71a00d}\label{class_administrador_abaa0f83676f1515d4b7ca6aafd71a00d} 
+\index{Administrador@{Administrador}!ObtenerJugadorPorId@{ObtenerJugadorPorId}}
+\index{ObtenerJugadorPorId@{ObtenerJugadorPorId}!Administrador@{Administrador}}
+\doxysubsubsection{\texorpdfstring{ObtenerJugadorPorId()}{ObtenerJugadorPorId()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_jugador}{Jugador}} Administrador.\+Obtener\+Jugador\+Por\+Id (\begin{DoxyParamCaption}\item[{long}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_administrador_aa5f5cf81ec05d0f31f8fddb003f68965}\label{class_administrador_aa5f5cf81ec05d0f31f8fddb003f68965} 
+\index{Administrador@{Administrador}!ObtenerPartidaDisponible@{ObtenerPartidaDisponible}}
+\index{ObtenerPartidaDisponible@{ObtenerPartidaDisponible}!Administrador@{Administrador}}
+\doxysubsubsection{\texorpdfstring{ObtenerPartidaDisponible()}{ObtenerPartidaDisponible()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_library_1_1_partida}{Partida}} Administrador.\+Obtener\+Partida\+Disponible (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_administrador_af415514d33843867dcfc526eeee5cba4}\label{class_administrador_af415514d33843867dcfc526eeee5cba4} 
+\index{Administrador@{Administrador}!ObtenerPartidaPorId@{ObtenerPartidaPorId}}
+\index{ObtenerPartidaPorId@{ObtenerPartidaPorId}!Administrador@{Administrador}}
+\doxysubsubsection{\texorpdfstring{ObtenerPartidaPorId()}{ObtenerPartidaPorId()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_library_1_1_partida}{Partida}} Administrador.\+Obtener\+Partida\+Por\+Id (\begin{DoxyParamCaption}\item[{int}]{id\+Partida }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_administrador_a101ba2299137f7530c824a4b594c2f3c}\label{class_administrador_a101ba2299137f7530c824a4b594c2f3c} 
+\index{Administrador@{Administrador}!ObtenerPartidasComenzadas@{ObtenerPartidasComenzadas}}
+\index{ObtenerPartidasComenzadas@{ObtenerPartidasComenzadas}!Administrador@{Administrador}}
+\doxysubsubsection{\texorpdfstring{ObtenerPartidasComenzadas()}{ObtenerPartidasComenzadas()}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{class_library_1_1_partida}{Partida}} $>$ Administrador.\+Obtener\+Partidas\+Comenzadas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_administrador_a0e5b52c1b3dd1cd96be6a98f75e6d209}\label{class_administrador_a0e5b52c1b3dd1cd96be6a98f75e6d209} 
+\index{Administrador@{Administrador}!ObtenerPartidasConJugadoresEsperando@{ObtenerPartidasConJugadoresEsperando}}
+\index{ObtenerPartidasConJugadoresEsperando@{ObtenerPartidasConJugadoresEsperando}!Administrador@{Administrador}}
+\doxysubsubsection{\texorpdfstring{ObtenerPartidasConJugadoresEsperando()}{ObtenerPartidasConJugadoresEsperando()}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{class_library_1_1_partida}{Partida}} $>$ Administrador.\+Obtener\+Partidas\+Con\+Jugadores\+Esperando (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_administrador_a25040598654c71a36f0c93ff70bbeaa8}\label{class_administrador_a25040598654c71a36f0c93ff70bbeaa8} 
+\index{Administrador@{Administrador}!UnirseAPartida@{UnirseAPartida}}
+\index{UnirseAPartida@{UnirseAPartida}!Administrador@{Administrador}}
+\doxysubsubsection{\texorpdfstring{UnirseAPartida()}{UnirseAPartida()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_library_1_1_partida}{Partida}} Administrador.\+Unirse\+APartida (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_jugador}{Jugador}}}]{jugador }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_administrador_accc0394665bbf166e0eeaba70a16ab1b}\label{class_administrador_accc0394665bbf166e0eeaba70a16ab1b} 
+\index{Administrador@{Administrador}!\_Administrador@{\_Administrador}}
+\index{\_Administrador@{\_Administrador}!Administrador@{Administrador}}
+\doxysubsubsection{\texorpdfstring{\_Administrador}{\_Administrador}}
+{\footnotesize\ttfamily ? \mbox{\hyperlink{class_administrador}{Administrador}} Administrador.\+\_\+\+Administrador = null\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_administrador_a2ed56b48cb2e8b4ebd4e78bde27e7576}\label{class_administrador_a2ed56b48cb2e8b4ebd4e78bde27e7576} 
+\index{Administrador@{Administrador}!locker@{locker}}
+\index{locker@{locker}!Administrador@{Administrador}}
+\doxysubsubsection{\texorpdfstring{locker}{locker}}
+{\footnotesize\ttfamily readonly object Administrador.\+locker = new object()\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_administrador_a9441cf536d15b4dc35bdd866ee6b99f1}\label{class_administrador_a9441cf536d15b4dc35bdd866ee6b99f1} 
+\index{Administrador@{Administrador}!partidas@{partidas}}
+\index{partidas@{partidas}!Administrador@{Administrador}}
+\doxysubsubsection{\texorpdfstring{partidas}{partidas}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_library_1_1_partida}{Partida}}$>$ Administrador.\+partidas = new List$<$\mbox{\hyperlink{class_library_1_1_partida}{Partida}}$>$()}
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_administrador_acc92494b9d417291ab20507c0182ead2}\label{class_administrador_acc92494b9d417291ab20507c0182ead2} 
+\index{Administrador@{Administrador}!Instance@{Instance}}
+\index{Instance@{Instance}!Administrador@{Administrador}}
+\doxysubsubsection{\texorpdfstring{Instance}{Instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_administrador}{Administrador}} Administrador.\+Instance\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [get]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Library/\+Clases/\mbox{\hyperlink{_administrador_8cs}{Administrador.\+cs}}\end{DoxyCompactItemize}

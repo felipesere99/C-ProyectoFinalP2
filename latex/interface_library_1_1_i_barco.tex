@@ -1,0 +1,121 @@
+\doxysection{Library.\+IBarco Interface Reference}
+\hypertarget{interface_library_1_1_i_barco}{}\label{interface_library_1_1_i_barco}\index{Library.IBarco@{Library.IBarco}}
+Inheritance diagram for Library.\+IBarco\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_library_1_1_i_barco}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interface_library_1_1_i_barco_a46faf4afc82bcfb6a5786e5fda759ed3}{Registrar\+Disparo}} (int coordenada)
+\item 
+void \mbox{\hyperlink{interface_library_1_1_i_barco_af19f5f278f575559eb84f3551c81d3d5}{Actualizar\+Estado}} ()
+\item 
+\mbox{\hyperlink{class_coordenada}{Coordenada}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{interface_library_1_1_i_barco_a98f3a72a8a668bf44ab7e4f9cb9b5f87}{Obtener\+Coordenadas}} (\mbox{\hyperlink{class_coordenada}{Coordenada}} ubicacion\+Inicial)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{interface_library_1_1_i_barco_a96359e0d957acdfe12593d9ae9289ed3}{Largo}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+string \mbox{\hyperlink{interface_library_1_1_i_barco_addb8fdb7ad21b41b69f3315dcc725b83}{Estado}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\hyperlink{class_coordenada}{Coordenada}} \mbox{\hyperlink{interface_library_1_1_i_barco_a8647ac016c2b5358d1c4bf4b8133469c}{Ubicacion}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+List$<$ int $>$ \mbox{\hyperlink{interface_library_1_1_i_barco_a2aa40654a0924c9b8aa9442b74dd8000}{Disparos\+Recibidos}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\hyperlink{namespace_library_a78e8c44420d521ccfc8e892ed32af567}{Orientacion}} \mbox{\hyperlink{interface_library_1_1_i_barco_a20d39e11f8cacfea8248a521d6b8fad3}{Orientacion}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_library_1_1_i_barco_af19f5f278f575559eb84f3551c81d3d5}\label{interface_library_1_1_i_barco_af19f5f278f575559eb84f3551c81d3d5} 
+\index{Library.IBarco@{Library.IBarco}!ActualizarEstado@{ActualizarEstado}}
+\index{ActualizarEstado@{ActualizarEstado}!Library.IBarco@{Library.IBarco}}
+\doxysubsubsection{\texorpdfstring{ActualizarEstado()}{ActualizarEstado()}}
+{\footnotesize\ttfamily void Library.\+IBarco.\+Actualizar\+Estado (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+El metodo Actualizar\+Estado, es un metodo que sirve como un doble check del impacto, este nos va a devolver en que condición está el barco tras recibir un disparo. Ej. si es 2x1,7 ocupa dos ubicaciones, si en el primer disparo se impactó una de esas coordenadas tenemos un cambio de Estado de \"{}\+Intacto\"{} a \"{}\+Tocado\"{}. De suceder otra vez, es decir, un inpacto en la segunda coordenada, este barco pasará a estar \"{}\+Hundido\"{}. 
+
+Implemented in \mbox{\hyperlink{class_library_1_1_barco2x1_afda9e873740c3cbc2d1c155da5cef390}{Library.\+Barco2x1}}, \mbox{\hyperlink{class_library_1_1_barco3x1_a4377326a59b3c5287d094851de2befaa}{Library.\+Barco3x1}}, \mbox{\hyperlink{class_library_1_1_barco4x1_a3215da30fc58983080a84e8fb4141c23}{Library.\+Barco4x1}}, and \mbox{\hyperlink{class_library_1_1_barco5x1_a92ee8668870b0248395b6c535a483587}{Library.\+Barco5x1}}.
+
+\Hypertarget{interface_library_1_1_i_barco_a98f3a72a8a668bf44ab7e4f9cb9b5f87}\label{interface_library_1_1_i_barco_a98f3a72a8a668bf44ab7e4f9cb9b5f87} 
+\index{Library.IBarco@{Library.IBarco}!ObtenerCoordenadas@{ObtenerCoordenadas}}
+\index{ObtenerCoordenadas@{ObtenerCoordenadas}!Library.IBarco@{Library.IBarco}}
+\doxysubsubsection{\texorpdfstring{ObtenerCoordenadas()}{ObtenerCoordenadas()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_coordenada}{Coordenada}}\mbox{[}$\,$\mbox{]} Library.\+IBarco.\+Obtener\+Coordenadas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_coordenada}{Coordenada}}}]{ubicacion\+Inicial }\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{class_library_1_1_barco2x1_a838ad33e56a77a4f35cc344795522460}{Library.\+Barco2x1}}, \mbox{\hyperlink{class_library_1_1_barco3x1_acafb37b232d37174b845722f85bb29eb}{Library.\+Barco3x1}}, \mbox{\hyperlink{class_library_1_1_barco4x1_a35aaeefb0b5840e71819f211abf4f855}{Library.\+Barco4x1}}, and \mbox{\hyperlink{class_library_1_1_barco5x1_a8105946eb7344e7b9694c2580f233f58}{Library.\+Barco5x1}}.
+
+\Hypertarget{interface_library_1_1_i_barco_a46faf4afc82bcfb6a5786e5fda759ed3}\label{interface_library_1_1_i_barco_a46faf4afc82bcfb6a5786e5fda759ed3} 
+\index{Library.IBarco@{Library.IBarco}!RegistrarDisparo@{RegistrarDisparo}}
+\index{RegistrarDisparo@{RegistrarDisparo}!Library.IBarco@{Library.IBarco}}
+\doxysubsubsection{\texorpdfstring{RegistrarDisparo()}{RegistrarDisparo()}}
+{\footnotesize\ttfamily void Library.\+IBarco.\+Registrar\+Disparo (\begin{DoxyParamCaption}\item[{int}]{coordenada }\end{DoxyParamCaption})}
+
+Registrar\+Disparo , es el metodo que registra, valga la redundancia, los disparos recibidos por la nave en cuestión. Esto toma las ubicaciones que ocupan los barcos y la ubicación a la que el disparo fue efectuado. Comparando ambas \"{}ubicaciones\"{} para decidir si el disparo golpeo el barco. 
+
+Implemented in \mbox{\hyperlink{class_library_1_1_barco2x1_a6a851c12eb555e27c42260e44e2f09e3}{Library.\+Barco2x1}}, \mbox{\hyperlink{class_library_1_1_barco3x1_a96e5ec61dd2b6bdcd359363165462f90}{Library.\+Barco3x1}}, \mbox{\hyperlink{class_library_1_1_barco4x1_a7c2407e054b4a4f8a3f85e6865c12a41}{Library.\+Barco4x1}}, and \mbox{\hyperlink{class_library_1_1_barco5x1_a1c316680e05b5a415bab46dcbb36113a}{Library.\+Barco5x1}}.
+
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{interface_library_1_1_i_barco_a2aa40654a0924c9b8aa9442b74dd8000}\label{interface_library_1_1_i_barco_a2aa40654a0924c9b8aa9442b74dd8000} 
+\index{Library.IBarco@{Library.IBarco}!DisparosRecibidos@{DisparosRecibidos}}
+\index{DisparosRecibidos@{DisparosRecibidos}!Library.IBarco@{Library.IBarco}}
+\doxysubsubsection{\texorpdfstring{DisparosRecibidos}{DisparosRecibidos}}
+{\footnotesize\ttfamily List$<$int$>$ Library.\+IBarco.\+Disparos\+Recibidos\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_library_1_1_barco2x1_a34034153d1da73f64d1bd67ccd41ea1e}{Library.\+Barco2x1}}, \mbox{\hyperlink{class_library_1_1_barco3x1_a5faec0b30c6500e3d5e38a1d20ff867e}{Library.\+Barco3x1}}, \mbox{\hyperlink{class_library_1_1_barco4x1_a0d877290083ffa51e03d9f106b6c012d}{Library.\+Barco4x1}}, and \mbox{\hyperlink{class_library_1_1_barco5x1_a249aa5843c240535656387dd49a8e688}{Library.\+Barco5x1}}.
+
+\Hypertarget{interface_library_1_1_i_barco_addb8fdb7ad21b41b69f3315dcc725b83}\label{interface_library_1_1_i_barco_addb8fdb7ad21b41b69f3315dcc725b83} 
+\index{Library.IBarco@{Library.IBarco}!Estado@{Estado}}
+\index{Estado@{Estado}!Library.IBarco@{Library.IBarco}}
+\doxysubsubsection{\texorpdfstring{Estado}{Estado}}
+{\footnotesize\ttfamily string Library.\+IBarco.\+Estado\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_library_1_1_barco2x1_aa912f0a2d5c3db56b60d5c1ac2672335}{Library.\+Barco2x1}}, \mbox{\hyperlink{class_library_1_1_barco3x1_ad8b80060272c6803351dd387a272fec8}{Library.\+Barco3x1}}, \mbox{\hyperlink{class_library_1_1_barco4x1_a5b07edc9395ced954f5a1e951784a20b}{Library.\+Barco4x1}}, and \mbox{\hyperlink{class_library_1_1_barco5x1_a567e90b5a7fae209be7864acfac49677}{Library.\+Barco5x1}}.
+
+\Hypertarget{interface_library_1_1_i_barco_a96359e0d957acdfe12593d9ae9289ed3}\label{interface_library_1_1_i_barco_a96359e0d957acdfe12593d9ae9289ed3} 
+\index{Library.IBarco@{Library.IBarco}!Largo@{Largo}}
+\index{Largo@{Largo}!Library.IBarco@{Library.IBarco}}
+\doxysubsubsection{\texorpdfstring{Largo}{Largo}}
+{\footnotesize\ttfamily int Library.\+IBarco.\+Largo\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_library_1_1_barco2x1_a9e2e3f9484ef562d7eb1bd8f9250b3b4}{Library.\+Barco2x1}}, \mbox{\hyperlink{class_library_1_1_barco3x1_a7fedd3add89cd70aa939c8fd66c7cbf0}{Library.\+Barco3x1}}, \mbox{\hyperlink{class_library_1_1_barco4x1_a442f89d628730b0fb567c455b2fbfb3a}{Library.\+Barco4x1}}, and \mbox{\hyperlink{class_library_1_1_barco5x1_aea33568ac35ed7d86a5f26c606885a7e}{Library.\+Barco5x1}}.
+
+\Hypertarget{interface_library_1_1_i_barco_a20d39e11f8cacfea8248a521d6b8fad3}\label{interface_library_1_1_i_barco_a20d39e11f8cacfea8248a521d6b8fad3} 
+\index{Library.IBarco@{Library.IBarco}!Orientacion@{Orientacion}}
+\index{Orientacion@{Orientacion}!Library.IBarco@{Library.IBarco}}
+\doxysubsubsection{\texorpdfstring{Orientacion}{Orientacion}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_library_a78e8c44420d521ccfc8e892ed32af567}{Orientacion}} Library.\+IBarco.\+Orientacion\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+Las siguientes propiedades\+: un int Ubicacion, un int Largo y un str Estado, representan las propiedades asignadas a los barcos. La Ubicacion representa donde está en el tablero, y parte de su uso puede ser observado en el metodo Registrar\+Disparo. El Largo es la cantidad de ubicaiones en vertical u horizontal (una o la otra), que ocupan los barcos, en el caso de nuestro juego es de g2 a 5. El Estado representa la condicon del barco, como \"{}\+Intacto\"{}, \"{}\+Tocado\"{} o \"{}\+Hundido\"{}. 
+
+Implemented in \mbox{\hyperlink{class_library_1_1_barco2x1_a818fe6c94953dcb85d083dcabae2a0cf}{Library.\+Barco2x1}}, \mbox{\hyperlink{class_library_1_1_barco3x1_a267f4b2f427c8e89aa634d87ed7e6c3c}{Library.\+Barco3x1}}, \mbox{\hyperlink{class_library_1_1_barco4x1_a4e82ac8e568c13d93ff3ee80f86043a7}{Library.\+Barco4x1}}, and \mbox{\hyperlink{class_library_1_1_barco5x1_a377172c2096494051a91f8d6e843e6a9}{Library.\+Barco5x1}}.
+
+\Hypertarget{interface_library_1_1_i_barco_a8647ac016c2b5358d1c4bf4b8133469c}\label{interface_library_1_1_i_barco_a8647ac016c2b5358d1c4bf4b8133469c} 
+\index{Library.IBarco@{Library.IBarco}!Ubicacion@{Ubicacion}}
+\index{Ubicacion@{Ubicacion}!Library.IBarco@{Library.IBarco}}
+\doxysubsubsection{\texorpdfstring{Ubicacion}{Ubicacion}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_coordenada}{Coordenada}} Library.\+IBarco.\+Ubicacion\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_library_1_1_barco2x1_a7b7abe833f00257209cd5f7bc97d0ccd}{Library.\+Barco2x1}}, \mbox{\hyperlink{class_library_1_1_barco3x1_a558d1d4f3fb2929d31a65cc6115fe256}{Library.\+Barco3x1}}, \mbox{\hyperlink{class_library_1_1_barco4x1_a06a449e23ebe02d3ba3c23e510ad1712}{Library.\+Barco4x1}}, and \mbox{\hyperlink{class_library_1_1_barco5x1_a7a860801c291df0a71683e4687ad7e99}{Library.\+Barco5x1}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Library/\+Clases/\+IBarco/\mbox{\hyperlink{_i_barco_8cs}{IBarco.\+cs}}\end{DoxyCompactItemize}

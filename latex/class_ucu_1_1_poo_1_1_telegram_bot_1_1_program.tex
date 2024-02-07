@@ -1,0 +1,57 @@
+\doxysection{Ucu.\+Poo.\+Telegram\+Bot.\+Program Class Reference}
+\hypertarget{class_ucu_1_1_poo_1_1_telegram_bot_1_1_program}{}\label{class_ucu_1_1_poo_1_1_telegram_bot_1_1_program}\index{Ucu.Poo.TelegramBot.Program@{Ucu.Poo.TelegramBot.Program}}
+
+
+Un programa que implementa un bot de Telegram.  
+
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_ucu_1_1_poo_1_1_telegram_bot_1_1_program_a35a9ad85c60d378b7eb9c35993c4d7c0}{Main}} ()
+\begin{DoxyCompactList}\small\item\em Punto de entrada al programa. \end{DoxyCompactList}\item 
+static async Task \mbox{\hyperlink{class_ucu_1_1_poo_1_1_telegram_bot_1_1_program_aea55c8b188c137dd63b54edf2ab8743e}{Handle\+Update\+Async}} (ITelegram\+Bot\+Client bot\+Client, Update update, Cancellation\+Token cancellation\+Token)
+\begin{DoxyCompactList}\small\item\em Maneja las actualizaciones del bot (todo lo que llega), incluyendo mensajes, ediciones de mensajes, respuestas a botones, etc. En este ejemplo sólo manejamos mensajes de texto. \end{DoxyCompactList}\item 
+static Task \mbox{\hyperlink{class_ucu_1_1_poo_1_1_telegram_bot_1_1_program_a189f80cbd62150158ac7192a439d20e7}{Handle\+Error\+Async}} (ITelegram\+Bot\+Client bot\+Client, Exception exception, Cancellation\+Token cancellation\+Token)
+\begin{DoxyCompactList}\small\item\em Manejo de excepciones. Por ahora simplemente la imprimimos en la consola. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Un programa que implementa un bot de Telegram. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_ucu_1_1_poo_1_1_telegram_bot_1_1_program_a189f80cbd62150158ac7192a439d20e7}\label{class_ucu_1_1_poo_1_1_telegram_bot_1_1_program_a189f80cbd62150158ac7192a439d20e7} 
+\index{Ucu.Poo.TelegramBot.Program@{Ucu.Poo.TelegramBot.Program}!HandleErrorAsync@{HandleErrorAsync}}
+\index{HandleErrorAsync@{HandleErrorAsync}!Ucu.Poo.TelegramBot.Program@{Ucu.Poo.TelegramBot.Program}}
+\doxysubsubsection{\texorpdfstring{HandleErrorAsync()}{HandleErrorAsync()}}
+{\footnotesize\ttfamily static Task Ucu.\+Poo.\+Telegram\+Bot.\+Program.\+Handle\+Error\+Async (\begin{DoxyParamCaption}\item[{ITelegram\+Bot\+Client}]{bot\+Client,  }\item[{Exception}]{exception,  }\item[{Cancellation\+Token}]{cancellation\+Token }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Manejo de excepciones. Por ahora simplemente la imprimimos en la consola. 
+
+\Hypertarget{class_ucu_1_1_poo_1_1_telegram_bot_1_1_program_aea55c8b188c137dd63b54edf2ab8743e}\label{class_ucu_1_1_poo_1_1_telegram_bot_1_1_program_aea55c8b188c137dd63b54edf2ab8743e} 
+\index{Ucu.Poo.TelegramBot.Program@{Ucu.Poo.TelegramBot.Program}!HandleUpdateAsync@{HandleUpdateAsync}}
+\index{HandleUpdateAsync@{HandleUpdateAsync}!Ucu.Poo.TelegramBot.Program@{Ucu.Poo.TelegramBot.Program}}
+\doxysubsubsection{\texorpdfstring{HandleUpdateAsync()}{HandleUpdateAsync()}}
+{\footnotesize\ttfamily static async Task Ucu.\+Poo.\+Telegram\+Bot.\+Program.\+Handle\+Update\+Async (\begin{DoxyParamCaption}\item[{ITelegram\+Bot\+Client}]{bot\+Client,  }\item[{Update}]{update,  }\item[{Cancellation\+Token}]{cancellation\+Token }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Maneja las actualizaciones del bot (todo lo que llega), incluyendo mensajes, ediciones de mensajes, respuestas a botones, etc. En este ejemplo sólo manejamos mensajes de texto. 
+
+\Hypertarget{class_ucu_1_1_poo_1_1_telegram_bot_1_1_program_a35a9ad85c60d378b7eb9c35993c4d7c0}\label{class_ucu_1_1_poo_1_1_telegram_bot_1_1_program_a35a9ad85c60d378b7eb9c35993c4d7c0} 
+\index{Ucu.Poo.TelegramBot.Program@{Ucu.Poo.TelegramBot.Program}!Main@{Main}}
+\index{Main@{Main}!Ucu.Poo.TelegramBot.Program@{Ucu.Poo.TelegramBot.Program}}
+\doxysubsubsection{\texorpdfstring{Main()}{Main()}}
+{\footnotesize\ttfamily static void Ucu.\+Poo.\+Telegram\+Bot.\+Program.\+Main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Punto de entrada al programa. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Program/\mbox{\hyperlink{_program_8cs}{Program.\+cs}}\end{DoxyCompactItemize}

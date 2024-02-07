@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['tablero_0',['Tablero',['../class_library_1_1_tablero.html',1,'Library']]],
+  ['tablero_1',['tablero',['../class_library_1_1_tablero.html#a1b7f01ce3d21825da804488683cedec9',1,'Library::Tablero']]],
+  ['tablero_2',['Tablero',['../class_jugador.html#a394addd0f6ee2c7e8994c6b1c614e95f',1,'Jugador.Tablero'],['../class_library_1_1_tablero.html#a4dce029c072b0c736e449885c850b98e',1,'Library.Tablero.Tablero()']]],
+  ['tablero_2ecs_3',['Tablero.cs',['../_tablero_8cs.html',1,'']]],
+  ['tableroprinter_4',['TableroPrinter',['../class_library_1_1_tablero_printer.html',1,'Library']]],
+  ['tableroprinter_2ecs_5',['TableroPrinter.cs',['../_tablero_printer_8cs.html',1,'']]],
+  ['tablerotest_6',['TableroTest',['../class_library_1_1_tests_1_1_tablero_test.html',1,'Library::Tests']]],
+  ['tablerotest_2ecs_7',['TableroTest.cs',['../_tablero_test_8cs.html',1,'']]],
+  ['terminada_8',['Terminada',['../class_library_1_1_partida.html#afe4480a608fa2ac3ffb4611bff2afd43',1,'Library::Partida']]],
+  ['test1_9',['Test1',['../class_library_1_1_tests_1_1_tests.html#a60fb8dbd9a38ad49a7ba323fd78e5085',1,'Library::Tests::Tests']]],
+  ['testdeusuario1_10',['Testdeusuario1',['../class_library_1_1_tests_1_1_testdeusuario1.html',1,'Library::Tests']]],
+  ['testdeusuario3_11',['Testdeusuario3',['../class_library_1_1_tests_1_1_testdeusuario3.html',1,'Library::Tests']]],
+  ['tests_12',['Tests',['../class_library_1_1_tests_1_1_tests.html',1,'Library::Tests']]],
+  ['testusuario1_2ecs_13',['testusuario1.cs',['../testusuario1_8cs.html',1,'']]],
+  ['testusuario3_2ecs_14',['testusuario3.cs',['../testusuario3_8cs.html',1,'']]],
+  ['tienebarcodelmismotamano_15',['TieneBarcoDelMismoTamano',['../class_library_1_1_tablero.html#aeb13b4264ee703eaf5c29e9083a01484',1,'Library::Tablero']]],
+  ['turnoactual_16',['turnoactual',['../class_library_1_1_partida.html#ae9a7a6b4202c9cc9ae6527ea2ed06130',1,'Library::Partida']]]
+];

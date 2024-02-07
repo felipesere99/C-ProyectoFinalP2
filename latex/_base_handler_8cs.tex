@@ -1,0 +1,16 @@
+\doxysection{src/\+Program/\+Handlers/\+Base\+Handler.cs File Reference}
+\hypertarget{_base_handler_8cs}{}\label{_base_handler_8cs}\index{src/Program/Handlers/BaseHandler.cs@{src/Program/Handlers/BaseHandler.cs}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_ucu_1_1_poo_1_1_telegram_bot_1_1_base_handler}{Ucu.\+Poo.\+Telegram\+Bot.\+Base\+Handler}}
+\begin{DoxyCompactList}\small\item\em Clase base para implementar el patrón \href{https://refactoring.guru/design-patterns/chain-of-responsibility}{\texttt{ Chain of Responsibility}}. En ese patrón se pasa un mensaje a través de una cadena de \"{}handlers\"{} que pueden procesar o no el mensaje. Cada \"{}handler\"{} decide si procesa el mensaje, o si se lo pasa al siguiente. Esta clase base implmementa la responsabilidad de recibir el mensaje y pasarlo al siguiente \"{}handler\"{} en caso que el mensaje no sea procesado. La responsabilidad de decidir si el mensaje se procesa o no, y de procesarlo, se delega a las clases sucesoras de esta clase base. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_ucu}{Ucu}}
+\item 
+namespace \mbox{\hyperlink{namespace_ucu_1_1_poo}{Ucu.\+Poo}}
+\item 
+namespace \mbox{\hyperlink{namespace_ucu_1_1_poo_1_1_telegram_bot}{Ucu.\+Poo.\+Telegram\+Bot}}
+\end{DoxyCompactItemize}

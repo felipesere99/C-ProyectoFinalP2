@@ -1,0 +1,192 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Program</name>
+    </assembly>
+    <members>
+        <member name="T:Ucu.Poo.TelegramBot.BaseHandler">
+            <summary>
+            Clase base para implementar el patrón
+            <a href="https://refactoring.guru/design-patterns/chain-of-responsibility">Chain of Responsibility</a>. En ese
+            patrón se pasa un mensaje a través de una cadena de "handlers" que pueden procesar o no el mensaje. Cada
+            "handler" decide si procesa el mensaje, o si se lo pasa al siguiente. Esta clase base implmementa la
+            responsabilidad de recibir el mensaje y pasarlo al siguiente "handler" en caso que el mensaje no sea procesado.
+            La responsabilidad de decidir si el mensaje se procesa o no, y de procesarlo, se delega a las clases sucesoras
+            de esta clase base.
+            <remarks>
+            Esta clase se crea en base al <a href="https://github.com/ucudal/PII_Principios_Patrones/blob/master/OCP.md">
+            principio abierto/cerrado</a> ya que la lógica de funcionamiento de la cadena de responsabilidad no puede ser
+            modificada por las clases sucesoras -la clase es cerrada a la modificación-, por un lado, pero el procesamiento
+            concreto de los mensajes se realiza en las clases sucesoras –la clase está abierta a la modificación–.
+            </remarks>
+            <remarks>
+            La cadena de responsabilidad implementada con esta clase y sus sucesoras utiliza el patrón GRASP
+            <a href="https://github.com/ucudal/PII_Principios_Patrones/blob/master/Polymorphism.md">polimorfismo</a> pues
+            evita preguntar por la clase capaz de procesar un mensaje, asignando la reponsabilidad de procesar el mensaje
+            en operaciones polimórficas –métodos virtuales– cuya implementación concreta se delega a los sucesores.
+            </remarks>
+            <remarks>
+            Esta clase usa el patrón <a href="https://refactoring.guru/design-patterns/template-method">Template
+            Method</a>: el método <see cref="M:Ucu.Poo.TelegramBot.BaseHandler.Handle(Telegram.Bot.Types.Message,System.String@)"/> tiene la lógica para procesar
+            un comando, que incluye determinar si se puede procesar o no el comando, y en caso de que no se pueda procesar
+            el comando, pasar el mensaje al siguiente "handler"; sin embargo, la lógica para procesar efectivamente el
+            comando, se delega a los sucesores a través del método virtual
+            <see cref="M:Ucu.Poo.TelegramBot.BaseHandler.InternalHandle(Telegram.Bot.Types.Message,System.String@)"/>; al mismo tiempo, aunque se provee la lógica
+            predeterminada para determinar si se puede procesar un mensaje o no, en el método
+            <see cref="M:Ucu.Poo.TelegramBot.BaseHandler.CanHandle(Telegram.Bot.Types.Message)"/>, los sucesores pueden sobrescribir este método para proveer otro
+            comportamiento.
+            </remarks>
+            </summary>
+        </member>
+        <member name="P:Ucu.Poo.TelegramBot.BaseHandler.Next">
+            <summary>
+            Obtiene el próximo "handler".
+            </summary>
+            <value>El "handler" que será invocado si este "handler" no procesa el mensaje.</value>
+        </member>
+        <member name="P:Ucu.Poo.TelegramBot.BaseHandler.Keywords">
+            <summary>
+            Obtiene o asigna el conjunto de palabras clave que este "handler" puede procesar.
+            </summary>
+            <value>Un array de palabras clave.</value>
+        </member>
+        <member name="M:Ucu.Poo.TelegramBot.BaseHandler.#ctor(Ucu.Poo.TelegramBot.IHandler)">
+            <summary>
+            Inicializa una nueva instancia de la clase <see cref="T:Ucu.Poo.TelegramBot.BaseHandler"/>.
+            </summary>
+            <param name="next">El próximo "handler".</param>
+        </member>
+        <member name="M:Ucu.Poo.TelegramBot.BaseHandler.#ctor(System.String[],Ucu.Poo.TelegramBot.BaseHandler)">
+            <summary>
+            Inicializa una nueva instancia de la clase <see cref="T:Ucu.Poo.TelegramBot.BaseHandler"/> con una lista de comandos.
+            </summary>
+            <param name="keywords">La lista de comandos.</param>
+            <param name="next">El próximo "handler".</param>
+        </member>
+        <member name="M:Ucu.Poo.TelegramBot.BaseHandler.InternalHandle(Telegram.Bot.Types.Message,System.String@)">
+            <summary>
+            Este método debe ser sobreescrito por las clases sucesores. La clase sucesora procesa el mensaje y asigna
+            la respuesta al mensaje.
+            </summary>
+            <param name="message">El mensaje a procesar.</param>
+            <param name="response">La respuesta al mensaje procesado.</param>
+        </member>
+        <member name="M:Ucu.Poo.TelegramBot.BaseHandler.InternalCancel(Telegram.Bot.Types.Message)">
+            <summary>
+            Este método puede ser sobreescrito en las clases sucesores que procesan varios mensajes cambiando de estado
+            entre mensajes deben sobreescribir este método para volver al estado inicial. En la clase base no hace nada.
+            </summary>
+        </member>
+        <member name="M:Ucu.Poo.TelegramBot.BaseHandler.CanHandle(Telegram.Bot.Types.Message)">
+            <summary>
+            Determina si este "handler" puede procesar el mensaje. En la clase base se utiliza el array
+            <see cref="P:Ucu.Poo.TelegramBot.BaseHandler.Keywords"/> para buscar el texto en el mensaje ignorando mayúsculas y minúsculas. Las
+            clases sucesores pueden sobreescribir este método para proveer otro mecanismo para determina si procesan o no
+            un mensaje.
+            </summary>
+            <param name="message">El mensaje a procesar.</param>
+            <returns>true si el mensaje puede ser pocesado; false en caso contrario.</returns>
+        </member>
+        <member name="M:Ucu.Poo.TelegramBot.BaseHandler.Handle(Telegram.Bot.Types.Message,System.String@)">
+            <summary>
+            Procesa el mensaje o lo pasa al siguiente "handler" si existe.
+            </summary>
+            <param name="message">El mensaje a procesar.</param>
+            <param name="response">La respuesta al mensaje procesado.</param>
+            <returns>El "handler" que procesó el mensaje si el mensaje fue procesado; null en caso contrario.</returns>
+        </member>
+        <member name="M:Ucu.Poo.TelegramBot.BaseHandler.Cancel(Telegram.Bot.Types.Message)">
+            <summary>
+            Retorna este "handler" al estado inicial. En los "handler" sin estado no hace nada. Los "handlers" que
+            procesan varios mensajes cambiando de estado entre mensajes deben sobreescribir este método para volver al
+            estado inicial.
+            </summary>
+        </member>
+        <member name="T:Ucu.Poo.TelegramBot.BuscarPartidaHandler">
+            <summary> 
+            Un "handler" del patrón Chain of Responsibility que implementa el comando "chau".
+            </summary>
+        </member>
+        <member name="T:Ucu.Poo.TelegramBot.ColocarBarcosHandler">
+            <summary>
+            Un "handler" del patrón Chain of Responsibility que implementa el comando "chau".
+            </summary>
+        </member>
+        <member name="T:Ucu.Poo.TelegramBot.CrearPartidaHandler">
+            <summary>
+            Un "handler" del patrón Chain of Responsibility que implementa el comando "chau".
+            </summary>
+        </member>
+        <member name="T:Ucu.Poo.TelegramBot.IHandler">
+            <summary>
+            Interfaz para implementar el patrón
+            <a href="https://refactoring.guru/design-patterns/chain-of-responsibility">Chain of Responsibility</a>. En ese
+            patrón se pasa un mensaje a través de una cadena de "handlers" que pueden procesar o no el mensaje. Cada
+            "handler" decide si procesa el mensaje, o si se lo pasa al siguiente. Esta interfaz define un atributo para
+            definir el próximo "handler" y una una operación para recibir el mensaje y pasarlo al siguiente "handler" en
+            caso que el mensaje no sea procesado. La responsabilidad de decidir si el mensaje se procesa o no, y de
+            procesarlo, se realiza en las clases que implementan esta interfaz.
+            <remarks>
+            La interfaz se crea en función del <a href="https://github.com/ucudal/PII_Principios_Patrones/blob/master/DIP.md">
+            principio de inversión de dependencias</a>, para que los clientes de la cadena de responsabilidad, que pueden
+            ser concretos, no dependan de una clase "handler" que potencialmente es abstracta.
+            </remarks>
+            <remarks>
+            Esta clase aplica el <a href="https://github.com/ucudal/PII_Principios_Patrones/blob/master/LSP.md">principio de
+            sustitución de Liskov</a> pues el comportamiento de procesar un mensaje no cambia al sustituir objetos que
+            implementan esta interfaz unos por otros –todos pueden ser parte de la cadena de responsabilidad– pues las
+            clases de esos objetos son subtipos del tipo definido en esta interfaz.
+            </remarks>
+            </summary>
+        </member>
+        <member name="P:Ucu.Poo.TelegramBot.IHandler.Next">
+            <summary>
+            Obtiene el próximo "handler".
+            </summary>
+            <value>El "handler" que será invocado si este "handler" no procesa el mensaje.</value>
+        </member>
+        <member name="M:Ucu.Poo.TelegramBot.IHandler.Handle(Telegram.Bot.Types.Message,System.String@)">
+            <summary>
+            Procesa el mensaje o la pasa al siguiente "handler" si existe.
+            </summary>
+            <param name="message">El mensaje a procesar.</param>
+            <param name="response">La respuesta al mensaje procesado.</param>
+            <returns>El "handler" que procesó el mensaje si el mensaje fue procesado; null en caso contrario.</returns>
+        </member>
+        <member name="M:Ucu.Poo.TelegramBot.IHandler.Cancel(Telegram.Bot.Types.Message)">
+            <summary>
+            Retorna este "handler" al estado inicial y cancela el próximo "handler" si existe. Es utilizado para que los
+            "handlers" que procesan varios mensajes cambiando de estado entre mensajes puedan volver al estado inicial en
+            caso de error por ejemplo.
+            </summary>
+        </member>
+        <member name="T:Ucu.Poo.TelegramBot.Program">
+            <summary>
+            Un programa que implementa un bot de Telegram.
+            </summary>
+        </member>
+        <member name="M:Ucu.Poo.TelegramBot.Program.Main">
+            <summary>
+            Punto de entrada al programa.
+            </summary>
+        </member>
+        <member name="M:Ucu.Poo.TelegramBot.Program.HandleUpdateAsync(Telegram.Bot.ITelegramBotClient,Telegram.Bot.Types.Update,System.Threading.CancellationToken)">
+            <summary>
+            Maneja las actualizaciones del bot (todo lo que llega), incluyendo mensajes, ediciones de mensajes,
+            respuestas a botones, etc. En este ejemplo sólo manejamos mensajes de texto.
+            </summary>
+        </member>
+        <member name="M:Ucu.Poo.TelegramBot.Program.HandleMessageReceived(Telegram.Bot.ITelegramBotClient,Telegram.Bot.Types.Message)">
+            <summary>
+            Maneja los mensajes que se envían al bot a través de handlers de una chain of responsibility.
+            </summary>
+            <param name="message">El mensaje recibido</param>
+            <returns></returns>
+        </member>
+        <member name="M:Ucu.Poo.TelegramBot.Program.HandleErrorAsync(Telegram.Bot.ITelegramBotClient,System.Exception,System.Threading.CancellationToken)">
+            <summary>
+            Manejo de excepciones. Por ahora simplemente la imprimimos en la consola.
+            </summary>
+        </member>
+    </members>
+</doc>

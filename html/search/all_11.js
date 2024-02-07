@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['partida_0',['Partida',['../class_library_1_1_partida.html',1,'Library.Partida'],['../class_library_1_1_partida.html#a4bca7cf5e8312d5d2c105283b1297de9',1,'Library.Partida.Partida()']]],
+  ['partida_2ecs_1',['Partida.cs',['../_partida_8cs.html',1,'']]],
+  ['partida2tests_2',['Partida2Tests',['../class_library_1_1_tests_1_1_partida2_tests.html',1,'Library::Tests']]],
+  ['partidaexcepcion_2ecs_3',['PartidaExcepcion.cs',['../_partida_excepcion_8cs.html',1,'']]],
+  ['partidallena_2ecs_4',['PartidaLlena.cs',['../_partida_llena_8cs.html',1,'']]],
+  ['partidallenaexception_5',['PartidaLlenaException',['../class_partida_llena_exception.html',1,'PartidaLlenaException'],['../class_partida_llena_exception.html#a9100bc762e20f27b7f8ecc84e92b529b',1,'PartidaLlenaException.PartidaLlenaException()']]],
+  ['partidanocomenzadaexception_6',['PartidaNoComenzadaException',['../class_library_1_1_partida_no_comenzada_exception.html',1,'Library.PartidaNoComenzadaException'],['../class_library_1_1_partida_no_comenzada_exception.html#a893327aa6d1039889dc81de214d300b5',1,'Library.PartidaNoComenzadaException.PartidaNoComenzadaException()']]],
+  ['partidas_7',['partidas',['../class_administrador.html#a9441cf536d15b4dc35bdd866ee6b99f1',1,'Administrador']]],
+  ['partidatest_8',['PartidaTest',['../class_library_1_1_tests_1_1_partida_test.html',1,'Library::Tests']]],
+  ['partidatest_2ecs_9',['PartidaTest.cs',['../_partida_test_8cs.html',1,'']]],
+  ['partidatest2_2ecs_10',['PartidaTest2.cs',['../_partida_test2_8cs.html',1,'']]],
+  ['posicionarnaves_5fy_5fprimermovimiento_11',['PosicionarNaves_Y_PrimerMovimiento',['../class_library_1_1_tests_1_1_testdeusuario3.html#a3549a9f277aa950e87df2b0fd23d77c8',1,'Library::Tests::Testdeusuario3']]],
+  ['program_12',['Program',['../class_ucu_1_1_poo_1_1_telegram_bot_1_1_program.html',1,'Ucu::Poo::TelegramBot']]],
+  ['program_2eassemblyinfo_2ecs_13',['Program.AssemblyInfo.cs',['../_program_8_assembly_info_8cs.html',1,'']]],
+  ['program_2ecs_14',['Program.cs',['../_program_8cs.html',1,'']]],
+  ['program_2eglobalusings_2eg_2ecs_15',['Program.GlobalUsings.g.cs',['../_program_8_global_usings_8g_8cs.html',1,'']]],
+  ['proyecto_2dbatalla_2dnaval_16',['Proyecto-Batalla-Naval',['../md__r_e_a_d_m_e.html',1,'']]]
+];

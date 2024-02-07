@@ -1,0 +1,54 @@
+\doxysection{Disparo Class Reference}
+\hypertarget{class_disparo}{}\label{class_disparo}\index{Disparo@{Disparo}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_disparo_a9e3733d4445342dcb3122da59e6eb066}{Realizar\+Disparo}} (\mbox{\hyperlink{class_jugador}{Jugador}} jugador\+Atacante, \mbox{\hyperlink{class_jugador}{Jugador}} jugador\+Atacado)
+\item 
+bool \mbox{\hyperlink{class_disparo_aa9dc025a73c86371483cf0a701dedcbb}{Impacto\+En\+Barco}} (\mbox{\hyperlink{interface_library_1_1_i_barco}{IBarco}} barco, int coordenada)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_disparo_ab154a2d54981cb1f11fe8197a811ebe1}{coordenada\+Dis\+Int}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+bool \mbox{\hyperlink{class_disparo_aae1c9d42899db3ed877d2871c2457eb9}{impacto}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Esta clase cumple con SRP porque dividimos su funcionalidad en metodos mas pequeños y especificos. Ej\+:Obtener\+Coordenada, Realizar\+Disparo y Impacto\+En\+Barco. Tambien cumple con Expert porque tiene la información necesaria para cumplir con las responasbilidades de \doxylink{class_disparo}{Disparo} 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_disparo_aa9dc025a73c86371483cf0a701dedcbb}\label{class_disparo_aa9dc025a73c86371483cf0a701dedcbb} 
+\index{Disparo@{Disparo}!ImpactoEnBarco@{ImpactoEnBarco}}
+\index{ImpactoEnBarco@{ImpactoEnBarco}!Disparo@{Disparo}}
+\doxysubsubsection{\texorpdfstring{ImpactoEnBarco()}{ImpactoEnBarco()}}
+{\footnotesize\ttfamily bool Disparo.\+Impacto\+En\+Barco (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_library_1_1_i_barco}{IBarco}}}]{barco,  }\item[{int}]{coordenada }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{class_disparo_a9e3733d4445342dcb3122da59e6eb066}\label{class_disparo_a9e3733d4445342dcb3122da59e6eb066} 
+\index{Disparo@{Disparo}!RealizarDisparo@{RealizarDisparo}}
+\index{RealizarDisparo@{RealizarDisparo}!Disparo@{Disparo}}
+\doxysubsubsection{\texorpdfstring{RealizarDisparo()}{RealizarDisparo()}}
+{\footnotesize\ttfamily string Disparo.\+Realizar\+Disparo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_jugador}{Jugador}}}]{jugador\+Atacante,  }\item[{\mbox{\hyperlink{class_jugador}{Jugador}}}]{jugador\+Atacado }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Realizar\+Disparo se encarga de devolver el resultado del disparo realizado, toma a ambos jugadores, de esta forma al jugador que realiza el ataque se le añade a su lista de disparos\+Realizados el hecho por ultimo y al jugador que es atacado se le cambiara el estado del barco en caso de que haya sido golpeado. 
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_disparo_ab154a2d54981cb1f11fe8197a811ebe1}\label{class_disparo_ab154a2d54981cb1f11fe8197a811ebe1} 
+\index{Disparo@{Disparo}!coordenadaDisInt@{coordenadaDisInt}}
+\index{coordenadaDisInt@{coordenadaDisInt}!Disparo@{Disparo}}
+\doxysubsubsection{\texorpdfstring{coordenadaDisInt}{coordenadaDisInt}}
+{\footnotesize\ttfamily int Disparo.\+coordenada\+Dis\+Int\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+\Hypertarget{class_disparo_aae1c9d42899db3ed877d2871c2457eb9}\label{class_disparo_aae1c9d42899db3ed877d2871c2457eb9} 
+\index{Disparo@{Disparo}!impacto@{impacto}}
+\index{impacto@{impacto}!Disparo@{Disparo}}
+\doxysubsubsection{\texorpdfstring{impacto}{impacto}}
+{\footnotesize\ttfamily bool Disparo.\+impacto\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Library/\+Clases/\mbox{\hyperlink{_disparo_8cs}{Disparo.\+cs}}\end{DoxyCompactItemize}
